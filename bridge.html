@@ -12,6 +12,15 @@
 <link rel="stylesheet" href="assets/style.css">
 <style>
 
+/* ヘッダーロゴとセンター名の表示をindex.htmlと統一 */
+.brand-mark-link,
+.brand-name-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
 /* フッターの高さを少し低くする */
 .site-footer .footer-inner {
   padding-top: 1.2rem;
@@ -34,10 +43,14 @@
 
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="index.html">
-      <img src="M_R-s.png" alt="大阪教育大学">
-      <span class="brand-name">大阪教育大学<br>産官学イノベーション共創センター<small>Collaborative Innovation Center for Industry, Government, Academia</small></span>
-    </a>
+    <div class="brand">
+      <a href="https://osaka-kyoiku.ac.jp/" class="brand-mark-link"target="_blank"rel="noopener noreferrer">
+        <img src="M_R-s.png" alt="大阪教育大学">
+      </a>
+      <a href="index.html" class="brand-name-link">
+        <span class="brand-name">大阪教育大学<br>産官学イノベーション共創センター<small>Collaborative Innovation Center for Industry, Government, Academia</small></span>
+      </a>
+    </div>
     <button class="nav-toggle" aria-expanded="false" aria-controls="gnav" aria-label="メニュー">
       <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
     </button>
